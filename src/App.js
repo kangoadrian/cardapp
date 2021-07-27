@@ -1,12 +1,15 @@
 import './App.css';
 import Cards from './components/Cards/Cards';
+import Titulo from './components/Titulo/Titulo';
 
 function App() {
   return (
-    <div className="container">
-      <h1>The Rick and Morty API</h1>
-      <Cards></Cards>
-    </div>
+    <div>
+      	<Titulo/>
+      		<div className="container p-5">
+       			<Cards/>
+      		</div>
+  	</div>
   );
 }
 

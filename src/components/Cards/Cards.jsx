@@ -17,14 +17,15 @@ const Cards = () => {
     },[]);
 
     return (
-        <div className="row m-0 p-3">
+        <div className="row m-0 p-3 bg-gris">
             {
                 !characters ? 'Cargando...' :
                 characters.map(item=>(
-                    <div className="col-md-6 m-0 p-3 card ">
+                    <div className="col-md-6 m-0 p-3 card bg-gris">
                         <div className="row m-0 p-0 border-rad-10">
-                            <div className="col-md-4 m-0 p-0 height-200">
-                                <img src={item.image} className="img-fluid rounded-start m-0 p-0" alt={item.name}/>
+                            <div className="col-md-4 m-0 p-0 height-200 alin-cener">
+                                <div className="background"  style={{ backgroundImage: 'url({item.image})' }}></div>
+                                <img src={item.image} className="img-fluid rounded-start m-0 p-0" alt="..."/>
                             </div>
                             <div className="col-md-8 m-0 pl-3 height-200">
                                 <div className="card-body m-0 p-0">

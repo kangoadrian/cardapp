@@ -1,4 +1,11 @@
 P{margin:0!important;padding:0;}
+.bg-gris{
+    background-color:#212328
+}
+.alin-cener{
+    margin: auto;
+    text-align:center;
+} 
 .card{
     border:solid transparent;
     color:#fff;
@@ -10,9 +17,17 @@ P{margin:0!important;padding:0;}
 .height-200{
     height:200px;
     border-radius:20px 0 0 20px;
+    overflow: hidden;
 }
 .height-200 img{
    height:200px;
+   display:block;
+   opacity:1;
+}
+.height-200 .background{
+    height:1px;
+    display:none;
+    opacity:0;
 }
 .card-title{
     font-size:26px;
@@ -31,4 +46,30 @@ P{margin:0!important;padding:0;}
     padding: 0;
     font-size:14px;
     padding-top:6px;
+}
+
+@media (max-width: 959px){
+    .card-text {
+        font-size: 14px;
+    }
+    .card-body{
+        padding:10px;
+    }
+    .height-200{
+        height:auto;
+    }
+    .height-200 img{
+        height:1px;
+        display:none;
+        opacity:0;
+    }
+
+    .height-200 .background{
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        height:50vh;
+        display:block;
+        opacity:1;
+    }
 }
