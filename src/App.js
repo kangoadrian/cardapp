@@ -1,9 +1,11 @@
 import './App.css';
+import Cards from './components/Cards/Cards';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola Mundo</h1>
+    <div className="container">
+      <h1>The Rick and Morty API</h1>
+      <Cards></Cards>
     </div>
   );
 }
